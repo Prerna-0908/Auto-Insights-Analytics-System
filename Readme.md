@@ -1,43 +1,83 @@
-# AutoInsights – Automated Analytics System
+#  AutoInsights – Automated Analytics System
 
-An end-to-end automated analytics pipeline that processes raw data, generates insights, predicts future trends, and sends alerts — all with minimal manual intervention.
+A fully automated data analytics pipeline that transforms raw data into actionable insights, forecasts future trends, and triggers intelligent alerts — all with minimal human intervention.
 
 ---
 
-## Features
+##  Project Overview
 
--  Data Cleaning & Preprocessing  
--  KPI Generation (Total Sales, Category-wise, Region-wise)  
+AutoInsights is designed to simulate a real-world analytics system used in businesses.  
+It not only analyzes historical data but also predicts future performance and detects anomalies automatically.
+
+---
+
+##  Key Features
+
+-  Automated Data Cleaning & Preprocessing  
+-  KPI Generation (Sales, Category, Region)  
+-  Time-based Sales Analysis  
 -  Sales Forecasting using Machine Learning  
--  Alert System for anomaly detection (spikes/drops)  
+-  Intelligent Alert System (drop/spike detection)  
 -  Email Notifications for alerts  
--  Automated Scheduling  
--  Interactive Dashboard using Streamlit  
+-  Scheduled Automation  
+-  Interactive Dashboard (Streamlit)  
 
 ---
 
-##  Tech Stack
+## Tech Stack
 
-- **Python**
-- **Pandas**
-- **NumPy**
-- **Matplotlib**
-- **Scikit-learn**
-- **Streamlit**
-- **Schedule (Automation)**
-
----
-
-##  Dashboard Preview
-
-<img width="1288" height="583" alt="image" src="https://github.com/user-attachments/assets/3d903a33-74dc-49ff-bb30-198d0e29f261" />
+- Python  
+- Pandas, NumPy  
+- Scikit-learn  
+- Matplotlib  
+- Streamlit  
+- Schedule  
 
 ---
 
-##  How to Run the Project
+##  How to Run
 
-###  Clone the Repository
+### 1. Clone Repository
 
-```bash
+
 git clone https://github.com/Prerna-0908/Auto-Insights-Analytics-System.git
 cd Auto-Insights-Analytics-System
+
+### Install Dependencies
+   
+    
+  pip install -r requirements.txt
+
+    
+### Run Analytics Pipeline
+
+  python main.py
+
+
+### Run Dashboard
+
+  
+  python -m streamlit run app.py
+
+  
+### Run Automation
+   
+   python scheduler.py
+
+----
+
+## Project Structure
+data_cleaning.py      → Data preprocessing
+analysis.py           → KPI calculations
+alerts.py             → Alert system
+forecast.py           → ML predictions
+visualization.py      → Charts
+scheduler.py          → Automation
+app.py                → Streamlit dashboard
+main.py               → Pipeline entry point
+
+## Future Enhancements
+- Real-time data integration
+- Advanced ML models (ARIMA, LSTM)
+- Cloud deployment
+- User authentication
