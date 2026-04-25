@@ -43,38 +43,45 @@ It not only analyzes historical data but also predicts future performance and de
 git clone https://github.com/Prerna-0908/Auto-Insights-Analytics-System.git
 cd Auto-Insights-Analytics-System
 
-### Install Dependencies
+### 2. Install Dependencies
    
     
   pip install -r requirements.txt
 
     
-### Run Analytics Pipeline
+### 3. Run Analytics Pipeline
 
   python main.py
 
 
-### Run Dashboard
+### 4. Run Dashboard
 
   
   python -m streamlit run app.py
 
   
-### Run Automation
+### 5. Run Automation
    
    python scheduler.py
 
 ----
 
 ## Project Structure
-data_cleaning.py      → Data preprocessing
-analysis.py           → KPI calculations
-alerts.py             → Alert system
-forecast.py           → ML predictions
-visualization.py      → Charts
-scheduler.py          → Automation
-app.py                → Streamlit dashboard
-main.py               → Pipeline entry point
+- data_cleaning.py      → Data preprocessing
+
+- analysis.py           → KPI calculations
+
+- alerts.py             → Alert system
+
+- forecast.py           → ML predictions
+
+- visualization.py      → Charts
+
+- scheduler.py          → Automation
+
+- app.py                → Streamlit dashboard
+
+- main.py               → Pipeline entry point
 
 ## Future Enhancements
 - Real-time data integration
